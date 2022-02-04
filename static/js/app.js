@@ -2,8 +2,9 @@
 const tableData = data
 
 // Reference to HTML table using d3
-var table = d3.select("tbody")
+var tbody = d3.select("tbody")
 
+console.log(tbody.html)
 let buildTable = (data) => {
     // clear out the table by referencing the HTML container obj tbody
     tbody.html("")
@@ -18,6 +19,8 @@ let buildTable = (data) => {
             let cell = row.append("td");
             cell.text(val);
         });
-        
+
     });
 }
+console.log(tableData)
+buildTable(tableData)
