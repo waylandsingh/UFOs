@@ -12,14 +12,6 @@ function loadScript(src, callback) {
     document.head.append(script);
 }
 
-var tbody = ''
-// use the ajax script as example here with a callback to print to console
-loadScript("https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js", script => {
-    console.log(`${script.src} has been loaded`);
-    // Reference to HTML table using d3
-    tbody = d3.select("tbody")
-    buildTable(data)
-});
 
 function buildTable(data){
     // clear out the table by referencing the HTML container obj tbody
@@ -39,5 +31,12 @@ function buildTable(data){
     });
 }
 
-
+var tbody = ''
+// use the ajax script as example here with a callback to print to console
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js", script => {
+    console.log(`${script.src} has been loaded`);
+    // Reference to HTML table using d3
+    tbody = d3.select("tbody")
+    buildTable(data)
+});
 
