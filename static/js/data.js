@@ -1,3 +1,4 @@
+
 var data = [
   {
     datetime: "1/1/2010",
@@ -999,3 +1000,4 @@ var data = [
     comments: "Bright orange object&#44 rapid speed and direction changes .."
   }
 ];
+
