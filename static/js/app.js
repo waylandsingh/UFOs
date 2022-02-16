@@ -40,3 +40,4 @@ loadScript("https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js", script => {
     buildTable(data)
 });
 
+document.getElementById("submit-form").addEventListener("click", handleClick)
